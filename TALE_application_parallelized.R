@@ -612,8 +612,9 @@ SimulateTrial<- function(input,output){
 
   observeEvent(input$simulate, {
 
-    #set.seed(input$set_seed)
-
+    # seed = set.seed(input$set_seed)
+    # set.seed(seed)
+    
     tox_table <- input$toxicity_matrix
     colnames(tox_table) = c(1:ncol(tox_table))
     rownames(tox_table) = rev(c(1:nrow(tox_table)))
@@ -706,10 +707,10 @@ SimulateTrial<- function(input,output){
       showNotification("Processing...", duration = NULL, closeButton = FALSE, id = "loading_notification")
 
       parallel_out <- function(i) {
-        set.seed(i)
         # if(i%%50 == 0){
         #   h <- showNotification(paste("Processed more than", i, "repetitions"))
         # }
+        set.seed(i)
         out <- ConductTrial(N = n_cohort * number_of_cohorts,
                               n_cohort = n_cohort,
                               toxicity_matrix = tox_table,
@@ -785,6 +786,7 @@ SimulateTrial<- function(input,output){
 
 
       #showNotification( "pure qui")
+      
 
       l2 <- l2/n_sim*100
 
@@ -978,7 +980,7 @@ ui <- fluidPage( theme = shinytheme("lumen"),
                                        ),
                                        column(width = 6,
                                               numericInput("n_sim", label = "Number of replications:", 1000, min= 1, max = 15000, step = 20)
-                                       ),
+                                       )
                                        # column(width = 5,
                                        #        numericInput("set_seed", label =  "Set seed:", 3,
                                        #                     step = 1)
