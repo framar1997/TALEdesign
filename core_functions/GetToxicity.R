@@ -1,4 +1,4 @@
-#' GetToxicity: this function extracts the probability of toxicity of DL (i,j) from the toxicity matrix
+#' This function extracts the probability of toxicity of DL (i,j) from the toxicity matrix
 #'
 #' @param i: level of the first drug
 #' @param j: level of the second drug drug
