@@ -8,9 +8,6 @@
 # D+R = DEESCALATE WITH REVISTING
 # D = DEESCALATE WITHOUT REVISTING
 
-# Table 2 functions to determine allowable states
-# n=3
-
 n3 <- function(DLT) {
   #if(is.integer(DLT)==FALSE) stop("noninteger value")
   ifelse(DLT==0, 'E',
