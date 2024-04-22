@@ -1,7 +1,7 @@
 #' This function checks if a DL has a higher red or orange neighbor.
 #'
 #' @param DL: a DL
-#' @param trial_data: 
+#' @param trial_data: data frame summarizing the event of the trials
 #' @param return TRUE if DL has one higher red or orange neighbor
 #'
 
