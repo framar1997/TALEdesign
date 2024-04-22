@@ -1,4 +1,8 @@
-# dose(i,j) allowable states
+#' The following functions label the DLs according to their current explorable status
+#'
+#' @param DLT: number of dose-limiting toxicities of a DL
+#' @param return the explorable status of the DL
+
 # E = ESCALATION ALLOWED
 # S = STAY AT DOSE
 # D+R = DEESCALATE WITH REVISTING
