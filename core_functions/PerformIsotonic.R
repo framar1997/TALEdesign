@@ -1,4 +1,9 @@
-# Function which performs isotonic regression over the output of a trial
+# This function performs a isotonic regression at the end of the trial
+
+# @param outputdata: summary dataframe containing the trial data
+# @param nrow: number of drug A doses
+# @param ncol: number of drug B doses
+# @param return a summary dataframe containing the trial data after performing an isotonic regression
 
 PerformIsotonic <- function(outputdata, nrow, ncol){
   DLT_mat = matrix(0.5, nrow, ncol) #input$ncol,nrow
