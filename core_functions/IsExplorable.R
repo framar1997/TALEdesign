@@ -1,3 +1,15 @@
+#' This function checks if a DL is explorable
+#'
+#' @param DL: a DL
+#' @param trial_data: data frame summarizing the event of the trial
+#' @param all_DLs: list of all the DLs
+#' @param N: Enrolled patients (must be multiple of n_cohort)
+#' @param n_cohort: Cohort size
+#' @param trial_stage: stage of the trial
+#' @param nrow: number of drug A doses
+#' @param ncol: number of drug B doses
+#' @param return TRUE if the DL is explorable
+
 IsExplorable<- function(DL, trial_data, all_DLs, N,n_cohort, trial_stage, nrow, ncol){
   ind1 <- DL[1]
   ind2 <- DL[2]
