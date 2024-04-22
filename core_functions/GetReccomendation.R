@@ -1,8 +1,11 @@
 #' This function updates the DLT rate of a DL and the related reccomendation
 #'
 #' @param row_explore: data frame containing updated information on the latest explored DLs.
-#' @param explorable_DL: a list of explorable DLs to be pruned
-#' @param return a pruned list of explorable DLs
+#' @param lambda_e: escalation parameter
+#' @param lambda_d: de-escalation parameter
+#' @param lambda_r: de-escalate and remove parameter
+#' @param return recommendations for the latest explored DLs
+
 
 GetReccomendation <- function(row_explore, lambda_e, lambda_d, lambda_r){
   total_enrolled <- row_explore[8]
