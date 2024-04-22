@@ -3,7 +3,7 @@
 #' @param explorable_DL: the list of the DLs explorable at the current stage
 #' @param N: Enrolled patients (must be multiple of n_cohort)
 #' @param n_cohort: Cohort size
-#' @param trial_data: data frame summarizing the event of the trials
+#' @param trial_data: data frame summarizing the event of the trial
 #' @param return a list of DLs that can be explored in the next stage of the trial
 
 
