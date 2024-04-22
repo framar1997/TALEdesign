@@ -1,4 +1,5 @@
 #' This function explores the explorable DLs and it updates the trial information
+#'
 #' @param explorable_DL: the list of the DLs explorable at the current stage
 #' @param N: Enrolled patients (must be multiple of n_cohort)
 #' @param n_cohort: Cohort size
