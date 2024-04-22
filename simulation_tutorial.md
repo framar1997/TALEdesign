@@ -193,7 +193,7 @@ characteristics of the TALE design.
 First, we set the number of replications, `n_sim`, we want to conduct:
 
 ``` r
-n_sim = 10
+n_sim = 1000
 ```
 
 To accelerate computations, we execute the independent trials in
@@ -403,7 +403,7 @@ sim_summary
                                                                                   
     Average number of total DLT                                               6.00
     Average number of total enrolled patients                                21.00
-    Selection percent of MTD                                                 60.00
+    Selection percent of MTD                                                 40.60
     % of patients treated at MTD                                             28.58
     % of times in which the maximum sample size was reached                   0.00
     % of times in which the list of explorable DLs was empty after pruning  100.00
@@ -446,9 +446,9 @@ average_enrolled
 percentage_mtd_selection 
 ```
 
-       A1 A2 A3 A4 A5
-    B5  0  0  0  0  0
-    B4  0  0  0  0  0
-    B3 10 10  0  0  0
-    B2 20  0  0  0  0
-    B1 10 40 10  0  0
+         A1   A2  A3  A4  A5
+    B5  0.6  0.0 0.0 0.0 0.0
+    B4  2.7  0.0 0.0 0.0 0.0
+    B3  8.0  1.1 0.0 0.0 0.0
+    B2 20.8  3.6 0.9 0.0 0.0
+    B1 30.0 19.8 9.2 3.2 0.1
