@@ -1,4 +1,4 @@
-#' This function simulate a single trial
+#' This function simulates a single trial
 #'
 #' @param N: Enrolled patients (must be multiple of n_cohort)
 #' @param n_cohort: Cohort size
