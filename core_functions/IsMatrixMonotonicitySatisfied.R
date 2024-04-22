@@ -1,4 +1,7 @@
-# check if the toxicity matrix is monotone. If yes, return TRUE
+#' This function checks if the toxicity matrix is monotone
+#'
+#' @param toxicity_matrix: Matrix with the probabilities a toxicity
+#' @param return TRUE if the toxicity matrix is monotone
 
 IsMatrixMonotonicitySatisfied <- function(toxicity_matrix){
   dim <- nrow(toxicity_matrix)*ncol(toxicity_matrix)
