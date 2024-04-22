@@ -1,11 +1,9 @@
 #' This function explores the explorable DLs and it updates the trial information
 #' @param explorable_DL: the list of the DLs explorable at the current stage
-#' @param toxicity_matrix: data frame summarizing the event of the trials.
-#' @param trial_data: data frame summarizing the event of the trials.
-#' @param n_cohort: 
-#' @param trial_stage:
-#' @param select_lambda:
-#' @param return an updated version of trial_data
+#' @param N: Enrolled patients (must be multiple of n_cohort)
+#' @param n_cohort: Cohort size
+#' @param trial_data: data frame summarizing the event of the trials
+#' @param return a list of DLs that can be explored in the next stage of the trial
 
 
 AssignCohorts <- function(explorable_DL, N, n_cohort, trial_data){
