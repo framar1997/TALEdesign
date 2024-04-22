@@ -1,3 +1,11 @@
+#' This function checks if a DL has a higher red or orange neighbor.
+#'
+#' @param i: level of the first drug
+#' @param j: level of the second drug drug
+#' @param toxicity_matrix: matrix of toxicities
+#' @param return TRUE if DL has one higher red or orange neighbor
+#'
+
 HasOneHigherRedOrange<- function(DL, trial_data){
   ind1 <- DL[1]
   ind2 <- DL[2]
