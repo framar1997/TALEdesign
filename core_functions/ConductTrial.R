@@ -4,6 +4,10 @@
 #' @param n_cohort: Cohort size
 #' @param toxicity_matrix: Matrix with the probabilities a toxicity
 #' @param n_max: Maximum number of patients to assign at DL (i,j), for all i and for all j
+#' @param lambda_e: escalation parameter
+#' @param lambda_d: de-escalation parameter
+#' @param lambda_r: de-escalate and remove parameter
+#' @param return a list of objects containing information on the simulated trial.
 
 ConductTrial <- function(N, n_cohort, toxicity_matrix, n_max, select_lambda = TRUE, lambda_e = 0.17, lambda_d = 0.25, lambda_r = 0.45){
   options(dplyr.summarise.inform = FALSE)
