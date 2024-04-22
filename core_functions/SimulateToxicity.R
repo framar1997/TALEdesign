@@ -1,10 +1,10 @@
 #' This function explores the explorable DLs and it updates the trial information
+#'
 #' @param explorable_DL: the list of the DLs explorable at the current stage
 #' @param toxicity_matrix: data frame summarizing the event of the trials.
 #' @param trial_data: data frame summarizing the event of the trials.
-#' @param n_cohort:
-#' @param trial_stage:
-#' @param select_lambda:
+#' @param n_cohort: number of cohorts
+#' @param trial_stage: current trial stage
 #' @param return an updated version of trial_data
 
 
