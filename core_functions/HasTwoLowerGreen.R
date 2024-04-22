@@ -1,4 +1,9 @@
-
+#' This function checks if a DL has two lower green neighbor.
+#'
+#' @param DL: a DL
+#' @param trial_data: data frame summarizing the event of the trials
+#' @param return TRUE if DL has two lower green neighbor
+#'
 
 HasTwoLowerGreen<- function(DL, trial_data){
   ind1 <- DL[1]
