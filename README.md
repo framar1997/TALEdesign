@@ -13,10 +13,4 @@ This repository contains two additional tools that offer some advantages compare
   We also provide a [tutorial](https://github.com/framar1997/TALEdesign/blob/main/simulation_tutorial.qmd) containing guidelines to simulate a single or multiple trials using
   the provided core functions.
 
-It is worth to mention the three main functions used to implement simulation studies (and discussed in the [tutorial](https://github.com/framar1997/TALEdesign/blob/main/simulation_tutorial.qmd) ):
-
-1) ```ConductTrial()``` - This function requires the specification of the trial parameters and it returns the trial results;
-2) ```PerformIsotonic()``` - This function performs the isotonic regression on the trial results;
-4) ```SelectMTD()``` - This function requires the trial results (whether they have undergone isotonic regression or not) and it returns the selected MTD.
-
 The availability of these additional tools is also meant to provide a clear understanding of the computational procedures, as well as to ensure a reproducible R implementation.
