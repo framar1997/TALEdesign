@@ -2,6 +2,7 @@
 #'
 #' @param trial_data: data frame summarizing the event of the trials.
 #' @param explorable_DL: a list of explorable DLs to be pruned
+#' @param n_max: maximum number of patients enrollable at a DL
 #' @param return a pruned list of explorable DLs
 #' 
 PruneExplorableDLs <- function(trial_data, explorable_DL, n_max){
