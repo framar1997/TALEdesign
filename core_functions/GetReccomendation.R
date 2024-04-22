@@ -1,6 +1,6 @@
-#' This function applies the pruning procedure to the list of explorable DLs
+#' This function updates the DLT rate of a DL and the related reccomendation
 #'
-#' @param trial_data: data frame summarizing the event of the trials.
+#' @param row_explore: data frame containing updated information on the latest explored DLs.
 #' @param explorable_DL: a list of explorable DLs to be pruned
 #' @param return a pruned list of explorable DLs
 
