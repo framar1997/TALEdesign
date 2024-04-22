@@ -1,4 +1,8 @@
-# Function which takes as imput the data_summary (final output) of a trial and returns the MTD
+# This function selects the MTD at the end of the trial
+
+#' @param data_summary: dataset containing the results of a simulated trial
+#' @param MTD: target toxicity rate
+#' @param return the selected MTD
 
 SelectMTD <- function(data_summary, MTD){
   #data_summary$rates <- data_summary$TOT_DLT/data_summary$TOT_enrolledPatients
@@ -11,8 +15,8 @@ SelectMTD <- function(data_summary, MTD){
     
     # if there are multiple MTD candidates, we need to select the lowest dose
     
-    # se sommo indA e indB ottengo dei "livelli di bassezza". Cioé (1,1) somma a 2 ed é il piú basso DL,
-    # (1,2) (2,2) (2,1) sommano a 3 e sono i secondi piú bassi DL. Quindi sfrutto ció.
+    # se sommo indA e indB ottengo dei "livelli di bassezza". CioÃ© (1,1) somma a 2 ed Ã© il piÃº basso DL,
+    # (1,2) (2,2) (2,1) sommano a 3 e sono i secondi piÃº bassi DL. Quindi sfrutto ciÃ³.
     
     candidates$indexSum <- candidates$indA + candidates$indB
     minimum2 <- min(candidates$indexSum)
